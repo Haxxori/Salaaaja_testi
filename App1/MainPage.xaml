@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="App1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="424" Width="569">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button Content="Open file" HorizontalAlignment="Left" Height="42" Margin="382,134,0,0" VerticalAlignment="Top" Width="130" Click="Button_Click_Openfile"/>
+        <Button Content="Encrypt file" HorizontalAlignment="Left" Height="42" Margin="382,208,0,0" VerticalAlignment="Top" Width="130" Click="Button_Click_Encrypt_file"/>
+        <TextBox x:Name="textbox1" HorizontalAlignment="Left" Margin="83,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" TextChanged="TextBox_TextChanged1" Width="429"/>
+        <TextBox x:Name="textbox3" HorizontalAlignment="Left" Margin="90,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130" TextChanged="TextBox_TextChanged3"/>
+        <TextBox x:Name="textbox4" HorizontalAlignment="Left" Margin="168,191,0,0" TextWrapping="Wrap" Text="debugbox" VerticalAlignment="Top" Height="208" Width="196"/>
+        <Button x:Name="exit" Content="Exit program" HorizontalAlignment="Left" Margin="382,328,0,0" VerticalAlignment="Top" Click="exit_Click" Width="130" Height="42"/>
+        <RadioButton x:Name="Alg1_selector" Content="AES" HorizontalAlignment="Left" Margin="48,144,0,0" VerticalAlignment="Top" Checked="Alg1_selector_Checked"/>
+        <RadioButton x:Name="Alg2_selector" Content="3DES" HorizontalAlignment="Left" Margin="48,202,0,0" VerticalAlignment="Top" Checked="Alg2_selector_Checked"/>
+        <RadioButton x:Name="Alg3_selector" Content="alg3" HorizontalAlignment="Left" Margin="48,258,0,0" VerticalAlignment="Top" Checked="Alg3_selector_Checked"/>
+        <TextBlock x:Name="textblock_key" HorizontalAlignment="Left" Margin="48,100,0,0" TextWrapping="Wrap" Text="Key:" VerticalAlignment="Top" Width="37"/>
+        <TextBlock x:Name="textblock_info" HorizontalAlignment="Left" Margin="41,65,0,0" TextWrapping="Wrap" Text="Info:" VerticalAlignment="Top" Width="37" SelectionChanged="TextBlock_SelectionChanged"/>
+
+
+
+
+
+    </Grid>
+</Page>
